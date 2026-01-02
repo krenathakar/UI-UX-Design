@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Coffee Shop Landing Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ee7c2b",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#221810",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px" },
+                    animation: {
+                        'steam': 'rise 3s infinite linear',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        rise: {
+                            '0%': { transform: 'translateY(0) scale(1)', opacity: '0' },
+                            '50%': { opacity: '0.8' },
+                            '100%': { transform: 'translateY(-60px) scale(1.5)', opacity: '0' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                },
+            },
+        }
+    </script>
+<style>.steam-element {
+            filter: blur(8px);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased overflow-x-hidden selection:bg-primary selection:text-white">
+<div class="fixed inset-0 z-0 opacity-[0.03] dark:opacity-[0.05] pointer-events-none" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBIj_O7mwUpbPakvDciJKtxBgURTCNdMR9t8WyCMSiHJBB5XKB6Pjiu1JCqAp-z0rR1myuZRUz2epjQ94Y2tjWOlKcJuD-onK5rJfuG6m2cc-ljolWQHx0zlcRV46PK6kzWgbxU1jsulUYGt6KTCP5bhyLzQuzaR6dMzGKmt-zwmvu73FcIZNhbkln9LddMwEnVRNZM0sxp1do0Mo0wgNoGvDqYm9Etgle87F8cLrprkNEeOa-9PBsHQn4-awezzJ32AvHkB_01z9k'); background-size: 200px;">
+</div>
+<div class="relative z-10 flex flex-col min-h-screen w-full max-w-md mx-auto bg-background-light/90 dark:bg-background-dark/95 shadow-2xl overflow-hidden pb-24">
+<header class="sticky top-0 z-50 flex items-center justify-between px-6 py-4 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md transition-colors duration-300">
+<button class="flex items-center justify-center p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/10 text-[#181411] dark:text-white transition-colors">
+<span class="material-symbols-outlined !text-[28px]">menu</span>
+</button>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary !text-[24px]" data-weight="fill">local_cafe</span>
+<h2 class="text-[#181411] dark:text-white text-lg font-bold tracking-tight">Bean &amp; Brew</h2>
+</div>
+<button class="relative flex items-center justify-center p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/10 text-[#181411] dark:text-white transition-colors">
+<span class="material-symbols-outlined !text-[28px]">shopping_bag</span>
+<span class="absolute top-1 right-1 flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
+</span>
+</button>
+</header>
+<section class="relative w-full pt-6 pb-2 px-6">
+<div class="relative w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-xl bg-orange-100 dark:bg-orange-900/20 group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 hover:scale-105" data-alt="Close up of a ceramic coffee cup on a wooden table with warm lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAiBrJRbGWuJRsd77wJQoF39quxP9mOSecGNp1YpHOMdVyq4xCNi6B8wrt7A80Icv3KKgij0_V_eA8f7movGUTierZX-erGGkwOhq0jq9DL8HEy61nfXZ8Y5IQWxS_6pGow58GEj5ntMyiaFPWlyfLxil6Xh5eQnvRzrGxOzEluZ7rTSgGjwS-OXmkFQQ-2k8ZAuf99fU3rvJTmGTXdHaJCb4tFXZPSysnvp5gb5dqeG4JBtCeJ4zNbR97EWpp10ErGSuHAhtiBsXs');">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-1/3 left-1/2 -translate-x-1/2 w-20 h-40 pointer-events-none">
+<div class="steam-element absolute bottom-0 left-2 w-4 h-12 bg-white rounded-full opacity-0 animate-steam origin-bottom"></div>
+<div class="steam-element absolute bottom-0 left-8 w-5 h-16 bg-white rounded-full opacity-0 animate-steam origin-bottom" style="animation-delay: 1s;"></div>
+<div class="steam-element absolute bottom-0 left-5 w-3 h-10 bg-white rounded-full opacity-0 animate-steam origin-bottom" style="animation-delay: 2s;"></div>
+</div>
+<div class="absolute top-4 right-4 bg-white/90 dark:bg-black/80 backdrop-blur text-xs font-bold px-3 py-1.5 rounded-full shadow-sm text-primary animate-float">
+                    🔥 Trending Now
+                </div>
+<div class="absolute bottom-0 left-0 w-full p-6 text-white">
+<p class="text-sm font-medium opacity-90 mb-1">Single Origin Series</p>
+<h3 class="text-2xl font-bold leading-tight">Ethiopian Yirgacheffe</h3>
+</div>
+</div>
+</section>
+<section class="px-6 pt-6 pb-2 text-center">
+<h1 class="text-[#181411] dark:text-white text-3xl font-extrabold leading-tight tracking-tight mb-3">
+                Brewed for the <span class="text-primary">Bold</span>
+</h1>
+<p class="text-gray-600 dark:text-gray-300 text-base font-normal leading-relaxed max-w-[300px] mx-auto">
+                Start your day with the perfect brew. Experience the warmth in every cup.
+            </p>
+</section>
+<section class="px-6 py-6">
+<div class="flex flex-col gap-3 sm:flex-row sm:justify-center">
+<button class="flex-1 flex items-center justify-center h-14 px-8 rounded-xl bg-primary text-white text-lg font-bold shadow-lg shadow-orange-500/30 hover:bg-orange-600 active:scale-95 transition-all duration-200">
+<span class="material-symbols-outlined mr-2">restaurant_menu</span>
+                    View Menu
+                </button>
+<button class="flex-1 flex items-center justify-center h-14 px-8 rounded-xl border-2 border-primary/30 text-primary dark:text-primary hover:bg-primary/5 active:scale-95 transition-all duration-200 font-bold text-lg bg-transparent">
+<span class="material-symbols-outlined mr-2">location_on</span>
+                    Find Locations
+                </button>
+</div>
+</section>
+<section class="pl-6 py-4">
+<div class="flex items-center justify-between pr-6 mb-4">
+<h3 class="text-[#181411] dark:text-white text-xl font-bold">Today's Top Picks</h3>
+<a class="text-primary text-sm font-semibold hover:underline" href="#">See all</a>
+</div>
+<div class="flex overflow-x-auto gap-4 pb-6 pr-6 hide-scrollbar snap-x snap-mandatory">
+<div class="min-w-[160px] w-[160px] snap-center bg-white dark:bg-[#2A2018] rounded-2xl p-3 shadow-md border border-gray-100 dark:border-white/5 flex flex-col group">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden mb-3 bg-gray-100">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Glass of iced caramel macchiato with layers of milk and coffee" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUdf7_qIT5rB_v0SuwEFcFwZ-kUl6RGH22kvutQ9tXa-SHL_X2wfE9ioObbuR6-9PI2VOBMxDe69fSFQRUspytPfZXh2MAcecP8EtWvUgVRrUv2wISuttG-zV_tq-Z4UBGBIvSj2EB_SQ2rcKmMTZkIH9Z6US1jvqt3OEqJvVCMmXeV_4fGc0R4P7yLfPTWdzwxwemh6-Ip8enfb0dN-sjhO_5OdOCxvRoPrRg-4vO42Bko_6He5Mt6uKIgqZSCZFFPold72fGTks"/>
+</div>
+<div class="flex-1">
+<h4 class="text-[#181411] dark:text-white font-bold text-sm leading-tight mb-1">Caramel Macchiato</h4>
+<p class="text-gray-400 text-xs mb-2">Rich &amp; Creamy</p>
+</div>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-[#181411] dark:text-white font-bold">₹380</span>
+<button class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center hover:bg-orange-600 transition-colors shadow-md shadow-orange-500/20">
+<span class="material-symbols-outlined !text-[18px]">add</span>
+</button>
+</div>
+</div>
+<div class="min-w-[160px] w-[160px] snap-center bg-white dark:bg-[#2A2018] rounded-2xl p-3 shadow-md border border-gray-100 dark:border-white/5 flex flex-col group">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden mb-3 bg-gray-100">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Foamy latte art in a white ceramic cup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPCIPZROE1hYISDcZnijtCw90MPwhGYLFD71fqQYmaTi43F0Ezfc0EQmYctsPSVPwGRlVWXWH2ejA-_iHNQYNyxsb1QiAM8zHRQDBC4TGxzvB8lmsGUdK3Bolc0g7GkjQZJzjLry0iAY0UkqZbUcgLOLXDgO9NTEtPCVEpfDSENH7hWK4HIi__YS1ylQtolDEng362mvqLf8BDQ7sHDXCOuUkPVArEMI6iNr08bxR2RAFpqLfMpoYNMYdEORvmrAZFr1nsOQG1Ag4"/>
+</div>
+<div class="flex-1">
+<h4 class="text-[#181411] dark:text-white font-bold text-sm leading-tight mb-1">Classic Latte</h4>
+<p class="text-gray-400 text-xs mb-2">Smooth Finish</p>
+</div>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-[#181411] dark:text-white font-bold">₹330</span>
+<button class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center hover:bg-orange-600 transition-colors shadow-md shadow-orange-500/20">
+<span class="material-symbols-outlined !text-[18px]">add</span>
+</button>
+</div>
+</div>
+<div class="min-w-[160px] w-[160px] snap-center bg-white dark:bg-[#2A2018] rounded-2xl p-3 shadow-md border border-gray-100 dark:border-white/5 flex flex-col group">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden mb-3 bg-gray-100">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Flaky golden croissant on a plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxaVLMXZFtig1Lrnf-txCT-tQwf5ga3SdlLgqpW3POrI-NbEGmL3b_tU-gtIJVPGWSzNKBxYHe8EMjZd7-J2xis63VxcO5NPnpkEHiA5ohCoXFS_lrub3w-GYLnXdxfwVxIidVVLWS7cp-boIPv1b4fWLLMsfWSi5i7VdA7PUTeijgSD4rqb2oHe2KGycEN_WiahnlnomR4UN4mzUE0LJuidv7QmBHEAtt1cSN2hnHrmZLEKo6PImXRRNtLtZMJ0S53giPXVPQJtI"/>
+</div>
+<div class="flex-1">
+<h4 class="text-[#181411] dark:text-white font-bold text-sm leading-tight mb-1">Butter Croissant</h4>
+<p class="text-gray-400 text-xs mb-2">Fresh Baked</p>
+</div>
+<div class="flex items-center justify-between mt-auto">
+<span class="text-[#181411] dark:text-white font-bold">₹210</span>
+<button class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center hover:bg-orange-600 transition-colors shadow-md shadow-orange-500/20">
+<span class="material-symbols-outlined !text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<section class="px-6 pb-6">
+<div class="relative w-full h-32 rounded-2xl overflow-hidden flex items-center justify-center group cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Map view showing coffee shop locations with pins" data-location="Seattle, WA" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAphiTpYmdxFHME45mYKkbUWgGupgjxfQzJcTbPJB9Fus3xc5jENQXwk64PLbxyU31THfu2HysyTcR0ieHpqilSR3oZz4kPsAcr_3GexHiIlvXSDP5_YY_D3KEWj6RHjt7fmKp3TsexBkZraCa08YuWCwXk2qCM3UHYh09NOM2aSR54mvhNqo_4otnp-3fgvjsTUgT3t2u2UX4cY9NsNTZjeDgZf2GyM1LYk1H7suG7QGFjTrWM50LlptihRYMiGQIEhK-kI75P_34');">
+</div>
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors"></div>
+<div class="relative z-10 flex flex-col items-center text-white">
+<span class="material-symbols-outlined mb-1">near_me</span>
+<span class="font-bold text-lg">Find a Café Near You</span>
+</div>
+</div>
+</section>
+<nav class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 dark:bg-[#181411]/95 backdrop-blur-lg border-t border-gray-200 dark:border-white/10 max-w-md mx-auto pb-safe">
+<div class="flex items-center justify-around h-16 px-2">
+<button class="flex flex-col items-center justify-center w-full h-full text-primary gap-1">
+<span class="material-symbols-outlined !text-[24px] font-variation-fill">home</span>
+<span class="text-[10px] font-bold">Home</span>
+</button>
+<button class="flex flex-col items-center justify-center w-full h-full text-gray-400 dark:text-gray-500 hover:text-primary dark:hover:text-primary transition-colors gap-1 group">
+<span class="material-symbols-outlined !text-[24px] group-hover:scale-110 transition-transform">menu_book</span>
+<span class="text-[10px] font-medium">Menu</span>
+</button>
+<button class="flex flex-col items-center justify-center w-full h-full text-gray-400 dark:text-gray-500 hover:text-primary dark:hover:text-primary transition-colors gap-1 group">
+<span class="material-symbols-outlined !text-[24px] group-hover:scale-110 transition-transform">redeem</span>
+<span class="text-[10px] font-medium">Rewards</span>
+</button>
+<button class="flex flex-col items-center justify-center w-full h-full text-gray-400 dark:text-gray-500 hover:text-primary dark:hover:text-primary transition-colors gap-1 group">
+<span class="material-symbols-outlined !text-[24px] group-hover:scale-110 transition-transform">person</span>
+<span class="text-[10px] font-medium">Profile</span>
+</button>
+</div>
+<div class="h-4 w-full"></div>
+</nav>
+</div>
+</body></html>
